@@ -1,0 +1,4 @@
+- Added Footer to everypage
+- added semantic structure elements 
+- added order "complex form" to the view items page
+- Rewrote some of the code
