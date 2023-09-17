@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" type="text/css" href="dark_theme.css" />
+<body>
+
+    <head>
+        <title>Items Available</title>
+    </head>
+    <table border="1">
+        <!-- Table head -->
+        <thead>
+            <tr>
+                <th>
+                    Item Name
+                </th>
+                <th>
+                    Item ID
+                </th>
+                <th>
+                    Price
+                </th>
+                <th>
+                    Units available
+            </tr>
+        </thead>
+        <!-- table body -->
+        <tbody>
+            <!-- First Row -->
+            <tr>
+                <td>
+                    Milk
+                </td>
+                <td>
+                    0001
+                </td>
+                <td>
+                    1 S.R
+                </td>
+                <td>
+                    <center>
+                        10
+                    </center>
+                </td>
+            </tr>
+            <!-- Second Row -->
+            <tr>
+                <td>
+                    Water
+                </td>
+                <td>
+                    0002
+                </td>
+                <td>
+                    1 S.R
+                </td>
+                <td>
+                    <center>
+                        20
+                    </center>
+                </td>
+                <!-- Third Row -->
+            <tr>
+                <td>
+                    Bread
+                </td>
+                <td>
+                    0003
+                </td>
+                <td>
+                    2 S.R
+                </td>
+                <td>
+                    <center>
+                        5
+                    </center>
+                </td>
+        </tbody>
+                        <!-- 4th Row -->
+                        <tr>
+                            <td>
+                                Tissues
+                            </td>
+                            <td>
+                                0004
+                            </td>
+                            <td>
+                                3 S.R
+                            </td>
+                            <td>
+                                <center>
+                                    5
+                                </center>
+                            </td>
+                    </tbody>
+                <!-- 5th Row -->
+                <tr>
+                    <td>
+                        Eggs
+                    </td>
+                    <td>
+                        0005
+                    </td>
+                    <td>
+                        6 S.R
+                    </td>
+                    <td>
+                        <center>
+                            5
+                        </center>
+                    </td>
+            </tbody>
+        <!-- Table Footer -->
+        <tfoot>
+            <!-- caption -->
+            <caption align="top">
+                Items available
+            </caption>
+    </table>
+</body>
+<h3>
+</h3>
+<h4>
+    Order Items
+<br>
+<form action="/Order_Submitted.html">
+    <label for="Item ID">Item 1:</label>
+    <input list="Item-Names" id="Item-1" name="Item-1" />
+    
+    <datalist id="Item-Names">
+      <option value="Milk"></option>
+      <option value="Water"></option>
+      <option value="Bread"></option>
+      <option value="Tissues"></option>
+      <option value="Eggs"></option>
+    </datalist>
+    <label for="Item-1-x">Amount:</label>
+    <input type="number" id="Item-1-x" name="Item-1-x">
+<br>  
+
+<label for="Item ID">Item 2:</label>
+<input list="Item-Names" id="Item-1" name="Item-1" />
+
+<datalist id="Item-Names">
+  <option value="Milk"></option>
+  <option value="Water"></option>
+  <option value="Bread"></option>
+  <option value="Tissues"></option>
+  <option value="Eggs"></option>
+</datalist>
+<label for="Item-2-x">Amount:</label>
+<input type="number" id="Item-2-x" name="Item-2-x">
+<br>
+<br>
+    <input type="submit" value="Submit">
+  </form> 
+<br>
+
+  <footer>
+    <a href="Main.html">Main Page</a>
+    &nbsp;&nbsp;
+    <a href="Items_Table.html">View items in stock</a>
+    &nbsp;&nbsp;
+    <a href="Contact_Us.html">Contact Us</a>
+</footer>
+
+
+
+</html>
