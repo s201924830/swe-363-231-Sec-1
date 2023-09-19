@@ -1,0 +1,78 @@
+p {
+  color:black;
+}
+
+th {
+  text-transform:uppercase;
+}
+
+a {
+  color: #01ff41;
+}
+
+.top {
+  background-color:#ff1201;
+}
+
+em {
+  color:#0400fa;
+}
+
+#the_most_important {
+  text-transform:uppercase;
+  background-color: gold;
+}
+
+h1,h2,h3 {
+  text-transform:capitalize;
+}
+
+h2 {
+  font-family: sans-serif;
+}
+
+h2+p:first-letter {
+  font-size:x-large;
+}
+
+tbody tr:hover, tbody tr:hover td{
+  background-color:#0096fa;
+}
+
+header {
+  text-transform: uppercase;
+  background-color: #879499;
+  padding: 40px;
+  color:white;
+}
+
+nav li {
+  display:inline;
+  margin-left: 8px;
+}
+
+nav ul li:first-child {
+  text-decoration:underline;
+  color:#3e4749;
+}
+
+tbody tr:nth-child(odd){
+  background-color: #9987998c;
+}
+
+::selection {
+  background-color: #ff01c0;
+}
+
+a:hover {
+  cursor:pointer;
+}
+
+input {
+  height:20px;
+  border-color: lightgray;
+}
+
+input[name="message"]{
+  height:50px;
+}
