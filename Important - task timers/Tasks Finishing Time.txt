@@ -1,0 +1,18 @@
+today - 22/10/2023
+
+after checking the reposity i found out that the auto sync wasn't working (since css 4 up to js 2 i checked at when i was doing js3)so i uploded files manulally 
+- to find the time that i finished the tasks you can refer to winrar files modifiction & creation timer as it saves them unlike github
+
+- finishing times :
+	HTML 1 : 10/9
+	HTML 2 : 12/9
+	
+	CSS 1 : 17/9
+	CSS 2 : 19/9
+	CSS  3 : 18/9
+	CSS  4 : 4/10
+	
+	JS 1  :  4/10
+	JS 2  :  9/10
+	JS 3  : --
+	JS 4  : --
