@@ -1,0 +1,117 @@
+body {
+    background-color: #FFA451;
+}
+.Task_Platter{
+    position: absolute;
+    top: 12px;
+    left: 21px;
+    width: 54px;
+    height: 21px;
+    flex-shrink: 0;
+}
+.Mobile_Signal{
+    position: absolute;
+    top: 17.67px;
+    left: 293.67px;
+    width: 17px;
+    height: 10.667px;
+    flex-shrink: 0;
+}
+.Wifi{
+    position: absolute;
+    top: 17.33px;
+    left: 315.69px;
+    width: 15.272px;
+    height: 10.966px;
+    flex-shrink: 0;
+}
+.Battery{
+    position: absolute;
+    top: 17.33px;
+    left: 336px;
+    width: 24.328px;
+    height: 11.333px;
+    flex-shrink: 0;
+}
+.Basket{
+    position: absolute;
+    top: 155px;
+    left: 35px;
+    width: 301px;
+    height: 260px;
+    flex-shrink: 0;
+}
+.Ellipse{
+    position: absolute;
+    top: 432px;
+    left: 37px;
+    width: 301px;
+    height: 12px;
+    flex-shrink: 0;
+}
+.Ellipse{
+    position: absolute;
+    top: 432px;
+    left: 37px;
+    width: 301px;
+    height: 12px;
+    flex-shrink: 0;
+}
+.rectangle {
+    position: absolute; top: 468px;
+    width: 375px;
+    height: 344px;
+    flex-shrink: 0;
+    border: 1px solid #D7D7D7;
+    background: #FFF;
+}
+.Text1{
+    position: absolute;
+    top: 508px;
+    left: 24px;
+    color: #27214D;
+    font-family: TT Norms Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.16px;
+}
+.Text2{
+    position: absolute;
+    top: 535px;
+    left: 24px;
+    width: 299px;
+    color: #5D577E;
+    font-family: TT Norms Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.16px;
+}
+.Text3{
+    position: absolute;
+    top: 679px;
+    left: 134px;
+    color: #ffffff;
+    text-align: center;
+    font-family: TT Norms Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.16px;
+}
+.rectangle1 {
+    position: absolute; top: 663px; left: 24px;
+    width: 105px;
+    height: 24px;
+    display: inline-flex;
+    padding: 16px 111px;
+    align-items: flex-start;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFA451;
+}

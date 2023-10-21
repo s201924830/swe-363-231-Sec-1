@@ -1,0 +1,11 @@
+.frogg {
+    max-width: 1000px;
+}
+
+.frogg::after {
+    content: "3-10-2023";
+    position: relative;
+    left: 50%;
+    font-size: 30px;
+    color: rgb(28, 133, 98);
+}
