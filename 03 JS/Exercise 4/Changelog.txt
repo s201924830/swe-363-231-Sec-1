@@ -1,0 +1,5 @@
+in (Items_Table.html) :
+    - Creating a class for the main object & modifited the code according to the class
+    - refactored using functions & nested functions & anonymous functions
+
+- Added some Regexone Screenshot solutions to Regexon.html

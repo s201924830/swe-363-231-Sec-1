@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Items Available</title>
+    <link rel="stylesheet" type="text/css" href="dark_theme.css" />
+</head>
+
+<body>
+    <div id="app">
+        <table border="1">
+            <!-- Table head -->
+            <thead>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Item ID</th>
+                    <th>Price</th>
+                    <th>calories</th>
+                    <th>Units available</th>
+                </tr>
+            </thead>
+            <!-- table body -->
+            <tbody>
+                <tr v-for="item in items" :key="item.id">
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.id }}</td>
+                    <td>{{ item.price }}</td>
+                    <td>{{ item.calories }}</td>
+                    <td><center>{{ item.unitsAvailable }}</center></td>
+                </tr>
+            </tbody>
+            <!-- Table Footer -->
+            <tfoot>
+                <!-- caption -->
+                <caption align="top">Items available</caption>
+            </tfoot>
+        </table>
+        <br>
+        </form>
+        <footer>
+            <a href="Main.html">Main Page</a>
+            &nbsp;&nbsp;
+            <a href="Items_Table.html">View items in stock</a>
+            &nbsp;&nbsp;
+            <a href="Contact_Us.html">Contact Us</a>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+    <script>
+        new Vue({
+            el: '#app',
+            data: {
+                items: []
+            },
+            mounted() {
+                const url = 'https://corsproxy.io/?' + encodeURIComponent('https://www.fruityvice.com/api/fruit/all');
+
+                fetch(url)
+                    .then(response => response.json())
+                    .then(data => {
+                        this.items = data.map(itemData => {
+                            return {
+                                name: itemData.name,
+                                id: itemData.id,
+                                calories: itemData.nutritions.calories,
+                                price: Math.floor(Math.random() * (30 - 5) + 5),
+                                unitsAvailable: Math.floor(Math.random() * (30 - 5) + 5)
+                            };
+                        });
+                    })
+                    .catch(error => console.error('Error:', error));
+            }
+        });
+    </script>
+</body>
+
+</html>

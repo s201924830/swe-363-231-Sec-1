@@ -1,0 +1,3 @@
+- Added Fetch API in (view items in stock)
+- Added 2D Canvas in Contact us form
+- Added 3d screensaver in screensaver.html - it requires 5 seconds of idel time

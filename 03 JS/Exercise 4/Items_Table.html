@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Items Available</title>
+    <link rel="stylesheet" type="text/css" href="dark_theme.css" />
+</head>
+
+<body>
+    <table border="1">
+        <!-- Table head -->
+        <thead>
+            <tr>
+                <th>Item Name</th>
+                <th>Item ID</th>
+                <th>Price</th>
+                <th>calories</th>
+                <th>Units available</th>
+            </tr>
+        </thead>
+        <!-- table body -->
+        <tbody>
+            <!-- filled by api -->
+        </tbody>
+        <!-- Table Footer -->
+        <tfoot>
+            <!-- caption -->
+            <caption align="top">Items available</caption>
+        </tfoot>
+    </table>
+    <br>
+    </form>
+    <footer>
+        <a href="Main.html">Main Page</a>
+        &nbsp;&nbsp;
+        <a href="Items_Table.html">View items in stock</a>
+        &nbsp;&nbsp;
+        <a href="Contact_Us.html">Contact Us</a>
+    </footer>
+
+    <script>
+        class Item {
+            constructor(name, id, calories) {
+                this.name = name;
+                this.id = id;
+                this.calories = calories;
+                this.price = Math.floor(Math.random() * (30 - 5) + 5);
+                this.unitsAvailable = Math.floor(Math.random() * (30 - 5) + 5);
+            }
+        }
+        document.addEventListener("DOMContentLoaded", () => {
+            const url = 'https://corsproxy.io/?' + encodeURIComponent('https://www.fruityvice.com/api/fruit/all');
+
+            const processItemsData = (itemsData) => {
+                const tableBody = document.querySelector('tbody');
+                tableBody.innerHTML = '';
+
+                const createRow = (item) => {
+                    const newRow = document.createElement('tr');
+                    newRow.innerHTML = `<td>${item.name}</td><td>${item.id}</td><td>${item.price}</td><td>${item.calories}</td><td><center>${item.unitsAvailable}</center></td>`;
+                    return newRow;
+                };
+
+                const items = itemsData.map(itemData => new Item(itemData.name, itemData.id, itemData.nutritions.calories));
+
+                items.forEach(item => {
+                    tableBody.appendChild(createRow(item));
+                });
+            };
+
+            fetch(url)
+                .then(response => response.json())
+                .then(processItemsData)
+                .catch(error => console.error('Error:', error));
+        });
+    </script>
+</body>
+
+</html>

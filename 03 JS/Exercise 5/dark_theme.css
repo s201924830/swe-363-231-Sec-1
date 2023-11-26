@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+    color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: sans-serif;
+}
+
+img {
+    display: block;
+}
+
+a {
+    color: rgb(173, 202, 230);
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+nav li {
+    display: inline;
+}
+
+a:visited {
+    color: rgb(128, 0, 122);
+}
+
+footer {
+    font-family: sans-serif;
+}
