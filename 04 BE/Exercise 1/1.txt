@@ -1,0 +1,12 @@
+URL : Youtube.com
+
+Http Requests : 130
+
+Types of requests returned :
+text/html
+image/jpeg
+image/png
+
+largest file : 1.5 MB
+
+How Many MS : 12700ms
