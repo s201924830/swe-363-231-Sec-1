@@ -1,19 +1,23 @@
 const express = require('express');
+const bodyParser = require('body-parser');
+const path = require('path');
 const app = express();
 
-const bodyParser = require('body-parser');
+// Routes
 const mainRoutes = require('./Routes/mainRoute');
-const otherRoutes = require('./Routes/otherRoutes');
+const otherRoutes = require('./Routes/OtherRoutes');
 
-app.use(express.static('public'));
+// Middleware
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use('/', mainRoutes);
-app.use('/', otherRoutes);
+// Use routes
+app.use("/", require("./Routes/mainRoute"));
+app.use('/Other', require("./Routes/OtherRoutes"));
 
 app.post('/submit-form', (req, res) => {
-
   const formData = req.body;
-
+  // Do something with formData
   res.send('Form submitted successfully!');
 });
 
